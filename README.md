@@ -49,17 +49,16 @@ The following code has to be added at the very end of your preamble (Only `cleve
     pdfapart=2,
     pdfaconformance=B,
     pdfauthor={Author Name},
-    pdfdate={2018-07-13}
+    pdfdate={2018-07-13},
     pdftitle={Title of the work},
 }
 
-\input{pdfaxcode}
+\input{pdfacode}
 ```
 
 The `pdfacode.tex` file is available [in this repository](pdfacode.tex).
 It forces the inclusion of the ICC profile.
-The used profile `sRGB_IEC61966-2-1_black_scaled.icc` might be available in the `pdfx` folder of your LaTeX installation.
-Alternatively, you can download it [from CTAN](https://ctan.org/tex-archive/macros/latex/contrib/pdfx).
+An instance of the used profile `sRGB.icc` can be downloaded from [from CTAN](https://ctan.org/pkg/colorprofiles).
 It is probably best to copy this file to your project folder.
 
 The created PDF file should either be compliant with PDF/A or pretty close.
